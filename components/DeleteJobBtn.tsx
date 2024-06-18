@@ -5,7 +5,7 @@ import { useMutation, useQueryClient } from '@tanstack/react-query';
 import { deleteJobAction } from '@/utils/action';
 import { useToast } from '@/components/ui/use-toast';
 
-export default function({id}:{id:string}){
+export default function DeleteJobBtn({id}:{id:string}){
     const {toast} = useToast();
     const queryClient = useQueryClient();
     const {mutate,isPending}=useMutation({
